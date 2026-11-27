@@ -2,7 +2,7 @@
 # torch 的 cu128 构建不在 PyPI，需额外索引（下一行）。
 # 验证（2026-11-27）：按 README 的命令在全新的 Python 3.12.13 虚拟环境里从零安装，装出的 137 个包与本清单逐行一致，
 #   仓库里不依赖 GPU 的流水线全部通过。
-# 安全提示（2026-11-27 核对）：本清单未做安全更新。其中 10 个包有已公开的安全公告共 94 条（严重 3、高危 40、中危 45、低危 6），
+# 安全提示（2026-11-27 核对）：本清单未做安全更新。其中 10 个包有已公开的安全公告共 114 条（严重 7、高危 51、中危 50、低危 6），
 #   涉及 certifi、nltk、pillow、aiohttp、filelock、fsspec、setuptools、datasets、Werkzeug、torch。本仓代码不直接使用这些库。
 #   只在需要逐位复现实验环境时使用本文件，并在隔离环境里安装；日常使用请按 requirements.txt 安装。
 --extra-index-url https://download.pytorch.org/whl/cu128

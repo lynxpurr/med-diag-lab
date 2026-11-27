@@ -131,7 +131,7 @@ python tools/check_template_med.py ref && python tools/check_template_med.py swi
 > **安全说明**：两个文件里的直接依赖钉在 2026 年 9 月实验结束时的版本，没有做安全更新。
 >
 > - 按 `requirements.txt` 安装时，传递依赖会取当前版本。2026-11-27 实测，装出的环境里仍有已公开公告的包是 4 个：`datasets`（中危；`ms-swift==4.5.3` 要求 `datasets<4.8.5`，升不到修复版本）、`fsspec`、`setuptools`、`torch`。本仓的代码不直接使用这几个库。
-> - `requirements-lock.txt` 是实验环境的精确快照，其中 10 个包共有 94 条后来发布的公告，含严重级别。只在需要逐位复现实验环境时使用。
+> - `requirements-lock.txt` 是实验环境的精确快照，其中 10 个包共有 114 条后来发布的公告，其中 7 条是严重级别。只在需要逐位复现实验环境时使用。
 >
 > 请在隔离环境里安装，不要用这套环境处理不可信数据。
 
