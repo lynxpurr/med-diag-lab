@@ -26,6 +26,8 @@ All documentation is in Chinese. **Research use only — not for clinical use.**
 
 **项目状态**：实验已于 2026-09-30 完成并归档，本仓库是发布快照。
 
+**维护状态**：这是实验结束后的归档快照，不再新增实验，依赖版本不再升级（见「安全说明」）。发现问题欢迎提 issue；接受针对文档错误和脚本缺陷的修正，不接受新功能和依赖升级。实验结论如有更正，会先在原始工作副本里修改，再重新发布快照。
+
 在一个很小的中文病历诊断数据集上，用 Qwen3 + ms-swift 回答一个问题：**容量、训练数据、偏好这三类杠杆各自能换来什么，代价是什么。**
 
 模型的输入是一份结构化病历（性别、年龄、主诉、现病史、体格检查、辅助检查等字段），输出是 `<diseases>` 块里的疾病列表，加上逐条编号的诊断依据。
@@ -41,7 +43,7 @@ All documentation is in Chinese. **Research use only — not for clinical use.**
 | MED-D | 2026-09-30 | DPO 剂量阶梯（1 / 3 / 9 步） | [med-d-dpo.md](reports/med-d-dpo.md) |
 | MED-E | 2026-09-30 | seen 与 unseen 的差距量化、长尾分层，地图定稿 | [med-e-ood.md](reports/med-e-ood.md) |
 
-**规模与边界**（读结论前请先看这里）：单数据集，单随机种子，单模型族（Qwen3）；训练用的是 4bit 量化底座上的 LoRA（QLoRA），不是全参数微调；推理与评测都是 4bit 量化口径；评测集只有 80 / 60 / 40 / 20 / 10 条（依次是 val-reg、test-ood、test-rob、neg、negn），val-reg 上 1 分约等于 1 道题。
+**规模与边界**（读结论前请先看这里）：单数据集，单随机种子，单模型族（Qwen3）；训练用的是 4bit 量化底座上的 LoRA（QLoRA），不是全参数微调；微调后的模型和 8B、14B 两档的零样本评测是 4bit 量化口径，0.6B、1.7B、4B 三档的零样本读数是 bf16；评测集只有 80 / 60 / 40 / 20 / 10 条（依次是 val-reg、test-ood、test-rob、neg、negn），val-reg 上 1 分约等于 1 道题。
 
 ## 结论速览
 
