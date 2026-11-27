@@ -15,12 +15,14 @@ SAMPLER=$!
 trap "kill $SAMPLER 2>/dev/null" EXIT
 
 # tag|模型|quant_bits(空=bf16)|batch|所需freeMiB —— 小档先行，大档 4bit 贴边纪律
+# 所需freeMiB：2026-11-27 实测显存净增峰值（整卡 used 减常驻基线）加 200MiB、取整到百位——
+#   0.6b 6485 / 1.7b 9673 / 4b 12047 / 8b 10583 / 14b 13187
 PLAN=(
-  "0.6b|$MODELS_DIR/Qwen3-0.6B||16|3000"
-  "1.7b|$MODELS_DIR/Qwen3-1.7B||16|5500"
-  "4b|$MODELS_DIR/Qwen3-4B-Instruct-2507||8|10500"
-  "8b|$MODELS_DIR/Qwen3-8B|4|8|7500"
-  "14b|$MODELS_DIR/Qwen3-14B|4|4|11200"
+  "0.6b|$MODELS_DIR/Qwen3-0.6B||16|6700"
+  "1.7b|$MODELS_DIR/Qwen3-1.7B||16|9900"
+  "4b|$MODELS_DIR/Qwen3-4B-Instruct-2507||8|12300"
+  "8b|$MODELS_DIR/Qwen3-8B|4|8|10800"
+  "14b|$MODELS_DIR/Qwen3-14B|4|4|13400"
 )
 
 for row in "${PLAN[@]}"; do
