@@ -1,0 +1,1832 @@
+{
+ "tag": "14b",
+ "set": "val-reg",
+ "aggregate": {
+  "n": 80,
+  "fmt_ok": 79,
+  "disease_f1_macro": 0.41208333333333336,
+  "disease_p_macro": 0.38125,
+  "disease_r_macro": 0.4875,
+  "coverage_macro": 0.9366666666666666,
+  "n_cov_items": 55,
+  "halluc_total": 2
+ },
+ "records": [
+  {
+   "id": "rec-0901",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "右前臂牵拉伤",
+    "右肘部软组织损伤"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0297",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "急性胰腺炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0501",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "营养性缺铁性贫血",
+    "巨幼细胞性贫血",
+    "肠炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 5,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1074",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "营养性缺铁性贫血"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 8,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0884",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "阿尔茨海默病"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0975",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.3333333333333333,
+   "disease_r": 1.0,
+   "disease_f1": 0.5,
+   "pred_diseases": [
+    "室间隔缺损",
+    "左向右分流型先天性心脏病",
+    "肺动脉高压"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1303",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "腰椎间盘突出症"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0713",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "克罗恩病"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0569",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性肾小球肾炎",
+    "上呼吸道感染"
+   ],
+   "coverage": 0.8,
+   "n_atoms": 5,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1034",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "肠易激综合征",
+    "感染性肠炎（可能性较低）"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0585",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性酒精中毒",
+    "高血压性脑病"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0814",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "化脓性脑膜炎"
+   ],
+   "coverage": 0.8,
+   "n_atoms": 5,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1255",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "病毒性心肌炎",
+    "心功能不全"
+   ],
+   "coverage": 0.5,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0730",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "室性期前收缩",
+    "心肌损伤"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0301",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "细菌性痢疾"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0861",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性前壁ST段抬高型心肌梗死",
+    "心力衰竭"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 4,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1199",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "溃疡性结肠炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0389",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "骨软骨瘤"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0470",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "右侧中腹部肿块待查",
+    "慢性感染",
+    "贫血"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 3,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1013",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "肺癌",
+    "支气管炎"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0268",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "肠易激综合征"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1206",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性肾功能衰竭",
+    "败血症",
+    "流行性出血热"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 6,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0714",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "先天性心脏病",
+    "房间隔缺损"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0829",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "缺乏关键诊断信息"
+   ],
+   "coverage": 0.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0160",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "结核性脑膜炎"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0649",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "慢性感染",
+    "过敏性反应",
+    "肝脾肿大"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 3,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0807",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "甲状腺冷结节",
+    "甲状腺实质性肿块"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0751",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "缺氧缺血性脑病"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0986",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "先天性心脏病",
+    "左向右分流型先天性心脏病"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0774",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.3333333333333333,
+   "disease_r": 1.0,
+   "disease_f1": 0.5,
+   "pred_diseases": [
+    "新生儿败血症",
+    "新生儿溶血病",
+    "重度高胆红素血症"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 3,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0358",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "肺结核",
+    "肺癌",
+    "肺脓肿"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0856",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "高热惊厥",
+    "感染性休克"
+   ],
+   "coverage": 0.6666666666666666,
+   "n_atoms": 3,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0706",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "幼儿急疹",
+    "上呼吸道感染"
+   ],
+   "coverage": 0.3333333333333333,
+   "n_atoms": 3,
+   "halluc_count": 2,
+   "halluc_atoms": [
+    "40℃",
+    "40℃"
+   ],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1027",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "心律失常",
+    "心肌损伤"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1085",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "溃疡性结肠炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1031",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "精神分裂症"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0490",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "左肺感染",
+    "咯血"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0556",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.25,
+   "disease_r": 1.0,
+   "disease_f1": 0.4,
+   "pred_diseases": [
+    "室间隔缺损",
+    "肺动脉高压",
+    "左心室增大",
+    "左心功能不全"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0292",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "糖尿病酮症酸中毒"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0382",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "心肌炎",
+    "心动过速",
+    "心功能不全"
+   ],
+   "coverage": 0.6666666666666666,
+   "n_atoms": 3,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0213",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "先天性心脏病",
+    "反复呼吸道感染"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1029",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "主动脉瓣狭窄伴关闭不全"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0685",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "急性细菌性痢疾"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 3,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1107",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "新生儿败血症",
+    "新生儿溶血病",
+    "新生儿黄疸",
+    "新生儿体温调节障碍"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1022",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "缺铁性贫血"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0689",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "腹股沟斜疝"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0183",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "慢性阻塞性肺疾病急性加重"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1308",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.3333333333333333,
+   "disease_r": 1.0,
+   "disease_f1": 0.5,
+   "pred_diseases": [
+    "营养性缺铁性贫血",
+    "异食癖",
+    "肝脾肿大"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 5,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0697",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "先天性心脏病",
+    "房间隔缺损"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0011",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "食管癌",
+    "轻度贫血"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0771",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "腹股沟斜疝"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1164",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "食管癌"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1040",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "新生儿溶血病",
+    "新生儿肝脾肿大",
+    "新生儿黄疸"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0920",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "钩端螺旋体病"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 5,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0498",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "溃疡性结肠炎",
+    "反应性关节炎"
+   ],
+   "coverage": 0.75,
+   "n_atoms": 4,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0702",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "特发性血小板减少性紫癜",
+    "缺铁性贫血"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0779",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "急性胰腺炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0273",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1209",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "急性肾盂肾炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1079",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性脑血管病复发",
+    "精神行为异常"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0908",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "血管性痴呆",
+    "精神分裂症",
+    "抑郁症"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0741",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "精神分裂症"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1261",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性心肌梗死"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1036",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性下壁心肌梗死"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1077",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "化脓性脑膜炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0340",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "系统性红斑狼疮"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 3,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0905",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "急性细菌性痢疾",
+    "中度脱水"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0215",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "脑出血"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0270",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "肾病综合征"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 4,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0772",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "癫痫发作"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0259",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "精神分裂症"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0141",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "腹股沟斜疝"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0075",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.25,
+   "disease_r": 1.0,
+   "disease_f1": 0.4,
+   "pred_diseases": [
+    "慢性萎缩性胃炎",
+    "胃癌",
+    "营养不良",
+    "缺铁性贫血"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1200",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "高血压性脑出血",
+    "昏迷"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0393",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [
+    "先天性心脏病",
+    "反复呼吸道感染"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0142",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": true
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "营养性缺铁性贫血",
+    "小细胞低色素性贫血"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 8,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-1246",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.5,
+   "disease_r": 1.0,
+   "disease_f1": 0.6666666666666666,
+   "pred_diseases": [
+    "抑郁症",
+    "疑病障碍"
+   ],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0688",
+   "fmt_ok": false,
+   "fmt_detail": {
+    "parseable": false,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 0.0,
+   "disease_r": 0.0,
+   "disease_f1": 0.0,
+   "pred_diseases": [],
+   "coverage": null,
+   "n_atoms": 0,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0680",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "疱疹性咽峡炎"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 1,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  },
+  {
+   "id": "rec-0961",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "disease_p": 1.0,
+   "disease_r": 1.0,
+   "disease_f1": 1.0,
+   "pred_diseases": [
+    "肠结核"
+   ],
+   "coverage": 1.0,
+   "n_atoms": 2,
+   "halluc_count": 0,
+   "halluc_atoms": [],
+   "think_nonempty": false
+  }
+ ]
+}

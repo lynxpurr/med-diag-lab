@@ -1,0 +1,445 @@
+{
+ "caliber": {
+  "corpus": {
+   "records": 1337,
+   "diseases": 710,
+   "singleton": 436,
+   "singleton_pct": 61.4
+  },
+  "ood_refs": {
+   "items": 60,
+   "item_refs": 61,
+   "distinct": 61,
+   "train_zero": 61,
+   "note": "全病 corpus 单例池 + R0a 断言 → 零出现是构造性 100%"
+  },
+  "val_refs_dist": {
+   "2": 11,
+   "3": 17,
+   "4": 16,
+   "5": 13,
+   "6": 6,
+   "7": 2,
+   "8": 7,
+   "9": 1,
+   "11": 2,
+   "12": 2,
+   "13": 3
+  }
+ },
+ "val_buckets": {
+  "M": 29,
+  "H": 23,
+  "L": 28
+ },
+ "configs": {
+  "零样本": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.268,
+     "cov_macro": 0.911,
+     "fmt_ok": 27
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.431,
+     "cov_macro": 0.944,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 0.564,
+     "cov_macro": 0.949,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.412,
+   "ood": {
+    "f1_macro": 0.072,
+    "cov_macro": 0.927,
+    "ref_recall": 0.098,
+    "ref_hit": "6/61",
+    "hit_diseases": [
+     "子宫腺肌症",
+     "不全流产",
+     "急性肾小球肾炎",
+     "重症肌无力",
+     "肢端肥大症",
+     "帕金森病"
+    ]
+   }
+  },
+  "f1": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.571,
+     "cov_macro": 0.933,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.862,
+     "cov_macro": 1.0,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.981,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.8,
+   "ood": {
+    "f1_macro": 0.133,
+    "cov_macro": 0.969,
+    "ref_recall": 0.131,
+    "ref_hit": "8/61",
+    "hit_diseases": [
+     "子宫内膜结核",
+     "原发性慢性肾上腺皮质功能减退症",
+     "不全流产",
+     "泌乳素瘤",
+     "重症肌无力",
+     "肺门淋巴结结核",
+     "胆红素脑病",
+     "帕金森病"
+    ]
+   }
+  },
+  "f2": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.571,
+     "cov_macro": 0.933,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.862,
+     "cov_macro": 1.0,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.926,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.8,
+   "ood": {
+    "f1_macro": 0.133,
+    "cov_macro": 0.972,
+    "ref_recall": 0.131,
+    "ref_hit": "8/61",
+    "hit_diseases": [
+     "子宫内膜结核",
+     "原发性慢性肾上腺皮质功能减退症",
+     "不全流产",
+     "泌乳素瘤",
+     "重症肌无力",
+     "肺门淋巴结结核",
+     "胆红素脑病",
+     "帕金森病"
+    ]
+   }
+  },
+  "f3c": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.685,
+     "cov_macro": 0.833,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.862,
+     "cov_macro": 0.888,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.986,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.84,
+   "ood": {
+    "f1_macro": 0.083,
+    "cov_macro": 0.893,
+    "ref_recall": 0.082,
+    "ref_hit": "5/61",
+    "hit_diseases": [
+     "原发性慢性肾上腺皮质功能减退症",
+     "不全流产",
+     "重症肌无力",
+     "肢端肥大症",
+     "帕金森病"
+    ]
+   }
+  },
+  "cg": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.679,
+     "cov_macro": 0.933,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.897,
+     "cov_macro": 1.0,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.981,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.85,
+   "ood": {
+    "f1_macro": 0.083,
+    "cov_macro": 0.974,
+    "ref_recall": 0.082,
+    "ref_hit": "5/61",
+    "hit_diseases": [
+     "子宫内膜结核",
+     "重症肌无力",
+     "肺门淋巴结结核",
+     "胆红素脑病",
+     "肢端肥大症"
+    ]
+   }
+  },
+  "cm": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.714,
+     "cov_macro": 0.867,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.862,
+     "cov_macro": 0.985,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.926,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.85,
+   "ood": {
+    "f1_macro": 0.05,
+    "cov_macro": 0.965,
+    "ref_recall": 0.049,
+    "ref_hit": "3/61",
+    "hit_diseases": [
+     "重症肌无力",
+     "胆红素脑病",
+     "肢端肥大症"
+    ]
+   }
+  },
+  "cn": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.679,
+     "cov_macro": 0.867,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.897,
+     "cov_macro": 0.985,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 0.913,
+     "cov_macro": 0.926,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.825,
+   "ood": {
+    "f1_macro": 0.067,
+    "cov_macro": 0.964,
+    "ref_recall": 0.066,
+    "ref_hit": "4/61",
+    "hit_diseases": [
+     "不全流产",
+     "重症肌无力",
+     "胆红素脑病",
+     "肢端肥大症"
+    ]
+   }
+  },
+  "cn-low": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.714,
+     "cov_macro": 0.933,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.897,
+     "cov_macro": 1.0,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.926,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.863,
+   "ood": {
+    "f1_macro": 0.067,
+    "cov_macro": 0.985,
+    "ref_recall": 0.066,
+    "ref_hit": "4/61",
+    "hit_diseases": [
+     "不全流产",
+     "重症肌无力",
+     "肺门淋巴结结核",
+     "胆红素脑病"
+    ]
+   }
+  },
+  "dpo-s1": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.571,
+     "cov_macro": 0.933,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.862,
+     "cov_macro": 1.0,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.981,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.8,
+   "ood": {
+    "f1_macro": 0.133,
+    "cov_macro": 0.969,
+    "ref_recall": 0.131,
+    "ref_hit": "8/61",
+    "hit_diseases": [
+     "子宫内膜结核",
+     "原发性慢性肾上腺皮质功能减退症",
+     "不全流产",
+     "泌乳素瘤",
+     "重症肌无力",
+     "肺门淋巴结结核",
+     "胆红素脑病",
+     "帕金森病"
+    ]
+   }
+  },
+  "dpo-s3": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.643,
+     "cov_macro": 0.933,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.828,
+     "cov_macro": 1.0,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.981,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.812,
+   "ood": {
+    "f1_macro": 0.133,
+    "cov_macro": 0.974,
+    "ref_recall": 0.131,
+    "ref_hit": "8/61",
+    "hit_diseases": [
+     "子宫内膜结核",
+     "原发性慢性肾上腺皮质功能减退症",
+     "不全流产",
+     "泌乳素瘤",
+     "重症肌无力",
+     "肺门淋巴结结核",
+     "胆红素脑病",
+     "帕金森病"
+    ]
+   }
+  },
+  "dpo-s9": {
+   "val_strata": {
+    "L": {
+     "n": 28,
+     "f1_macro": 0.607,
+     "cov_macro": 0.933,
+     "fmt_ok": 28
+    },
+    "M": {
+     "n": 29,
+     "f1_macro": 0.862,
+     "cov_macro": 1.0,
+     "fmt_ok": 29
+    },
+    "H": {
+     "n": 23,
+     "f1_macro": 1.0,
+     "cov_macro": 0.981,
+     "fmt_ok": 23
+    }
+   },
+   "val_f1_macro": 0.812,
+   "ood": {
+    "f1_macro": 0.133,
+    "cov_macro": 0.974,
+    "ref_recall": 0.131,
+    "ref_hit": "8/61",
+    "hit_diseases": [
+     "子宫内膜结核",
+     "原发性慢性肾上腺皮质功能减退症",
+     "不全流产",
+     "泌乳素瘤",
+     "重症肌无力",
+     "肺门淋巴结结核",
+     "胆红素脑病",
+     "帕金森病"
+    ]
+   }
+  }
+ }
+}

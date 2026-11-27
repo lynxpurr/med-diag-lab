@@ -1,0 +1,33 @@
+med-diag-lab
+Copyright 2026 lynxpurr
+
+This product includes or is derived from the following third-party works.
+The project's own source code and documentation are licensed under the
+Apache License, Version 2.0 (see LICENSE).
+
+1. medical-record-diagnosis-chinese (dataset)
+   Source: https://modelscope.cn/datasets/zhangmingme/medical-record-diagnosis-chinese
+   License: Apache License, Version 2.0 (as declared by the uploader; the origin of the
+   cases is not independently documented)
+   Used as the upstream dataset for every experiment. The dataset and the training /
+   evaluation fixtures derived from it are NOT redistributed in this repository;
+   fetch them with data/fetch_raw.sh and rebuild with tools/build_dataset.py.
+
+2. Qwen3 (base models: 0.6B, 1.7B, 4B-Instruct-2507, 8B, 14B)
+   Source: https://github.com/QwenLM/Qwen3
+   License: Apache License, Version 2.0
+   Base models for zero-shot evaluation and LoRA fine-tuning. Model weights and LoRA
+   adapters are NOT redistributed in this repository.
+
+3. ms-swift (training and inference framework)
+   Source: https://github.com/modelscope/ms-swift
+   License: Apache License, Version 2.0
+
+4. WS/T 404-2012 and WS/T 405-2012 (Chinese health industry standards for clinical
+   reference intervals)
+   Numerical reference values only, cited by the synthetic records in
+   data/medc/eval-neg.jsonl and data/medc/eval-negn.jsonl.
+
+The synthetic no-disease records shipped in data/medc/ (eval-neg.jsonl, eval-negn.jsonl)
+were drafted with the assistance of a large language model and have NOT been reviewed by
+a medical professional. Nothing in this repository is validated for clinical use.

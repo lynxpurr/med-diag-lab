@@ -1,0 +1,22 @@
+# med-diag-lab 直接依赖（实验环境：Python 3.12 · Linux x86_64 · CUDA 12.8）。
+# 完整环境（137 个包）见 requirements-lock.txt。
+#
+# 安装顺序：先装 CUDA 12.8 构建的 torch，再装本文件——
+#   python3.12 -m venv .venv && source .venv/bin/activate
+#   pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements.txt
+#
+# 只跑数据构建与评测器自校准（README「快速开始」前三步）不需要任何第三方包，系统 python3 即可。
+#
+# 安全提示（2026-11-27 核对）：版本钉在实验结束时的状态，未做安全更新。
+#   datasets==4.8.4 有一条已公开的中危公告（路径穿越，只影响文件夹型数据集构建器）；ms-swift 4.5.3
+#   要求 datasets<4.8.5，修复版本 5.0.1 装不上。本仓代码不直接使用 datasets。
+# 验证（2026-11-27）：在全新的 Python 3.12.13 虚拟环境里按上述命令从零安装通过，不依赖 GPU 的流水线全部通过。
+#   这条路径下传递依赖取当前版本，实测仍有公告的包是 datasets、fsspec、setuptools、torch，详见 README 的安全说明。
+ms-swift==4.5.3
+transformers==5.16.1
+peft==0.20.0
+trl==0.29.1
+accelerate==1.15.0
+bitsandbytes==0.50.2
+datasets==4.8.4

@@ -1,0 +1,162 @@
+{
+ "tag": "dpo-s9",
+ "set": "negn",
+ "aggregate": {
+  "n": 10,
+  "fmt_ok": 10,
+  "neg_hit": 10,
+  "neg_reason_ok": 10
+ },
+ "records": [
+  {
+   "id": "negn-001",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-002",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-003",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-004",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-005",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-006",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-007",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-008",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-009",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  },
+  {
+   "id": "negn-010",
+   "fmt_ok": true,
+   "fmt_detail": {
+    "parseable": true,
+    "block_cn_semicolon": false,
+    "numbered": true,
+    "prose_cn_semicolon": false
+   },
+   "reasons_nonempty": true,
+   "condition_kind": "negative",
+   "neg_hit": true,
+   "neg_reason_ok": true,
+   "think_nonempty": false
+  }
+ ]
+}

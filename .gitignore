@@ -1,0 +1,21 @@
+# 运行产物与重建出的数据——全部可由 data/fetch_raw.sh + tools/ 重建，不入库。
+# （随仓的唯一数据文件是 data/medc/eval-neg.jsonl 与 eval-negn.jsonl。）
+output/
+models/
+data/raw/*.json
+data/raw/*.jsonl
+data/raw/*.part
+data/med0/
+data/medc/aug-*.jsonl
+data/medc/swift-train-*.jsonl
+data/medc/probe-negt.jsonl
+data/medc/aug-manifest*.json
+data/medd/dpo-pairs.jsonl
+data/medd/manifest.json
+data/medd/length-profile.json
+
+.venv*/
+__pycache__/
+*.pyc
+*.egg-info/
+.DS_Store
