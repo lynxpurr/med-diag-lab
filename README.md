@@ -1,13 +1,19 @@
 # med-diag-lab — 中文病历诊断微调实验场
 
-**English summary.** med-diag-lab is a small, fully documented fine-tuning experiment on a public
-Chinese medical-record diagnosis dataset (1,337 cases, 710 diseases) using Qwen3 and ms-swift on a
-single 16 GB GPU. It measures what capacity, training data and preference tuning (DPO) each buy and
-what they cost, under pre-registered verdicts, a disease-level leakage-free split, and a deterministic
-rule-based evaluator that must pass a gold self-check before any model is scored. The main
-deliverable is a "lever × failure-axis" map ([notes/map.md](notes/map.md)). Code: Apache-2.0. The
-dataset and model weights are not redistributed. All documentation is in Chinese.
-**Research use only — not for clinical use.**
+在一个 1337 例的中文病历诊断数据集上，用 Qwen3 + ms-swift 做的一组可复现的微调实验：零样本基线、SFT、合成数据增强、DPO，以及模型在“训练时见过的疾病”和“没见过的疾病”上差距有多大。主交付是一张“杠杆 × 失败轴”地图（[notes/map.md](notes/map.md)），说明每种手段换来了什么、代价是什么。**仅供研究，非临床用途。**
+
+<details>
+<summary>English summary</summary>
+
+med-diag-lab is a small, fully documented fine-tuning experiment on a public Chinese medical-record
+diagnosis dataset (1,337 cases, 710 diseases) using Qwen3 and ms-swift on a single 16 GB GPU. It measures
+what capacity, training data and preference tuning (DPO) each buy and what they cost, under pre-registered
+verdicts, a disease-level leakage-free split, and a deterministic rule-based evaluator that must pass a
+gold self-check before any model is scored. The main deliverable is a "lever × failure-axis" map
+(`notes/map.md`). Code: Apache-2.0. The dataset and model weights are not redistributed.
+All documentation is in Chinese. **Research use only — not for clinical use.**
+
+</details>
 
 > ## ⚠️ 非临床用途
 >
@@ -22,33 +28,37 @@ dataset and model weights are not redistributed. All documentation is in Chinese
 
 在一个很小的中文病历诊断数据集上，用 Qwen3 + ms-swift 回答一个问题：**容量、训练数据、偏好这三类杠杆各自能换来什么，代价是什么。**
 
-实验分六波推进。每一波开跑之前，先把判据和“两种结果各说明什么”写进 [PLAN.md](PLAN.md)；跑完按原文判决。偏离预期时只改后续实验的设计，不改已写下的判决。本仓库是单提交快照，这些先后关系依据文档内的日期，无法从 git 历史核验。
+模型的输入是一份结构化病历（性别、年龄、主诉、现病史、体格检查、辅助检查等字段），输出是 `<diseases>` 块里的疾病列表，加上逐条编号的诊断依据。
 
-| 波 | 完成日期 | 做了什么 |
-|---|---|---|
-| MED-0 | 2026-09-27 | 数据切分，三种训练目标形态 |
-| MED-A | 2026-09-28 | Qwen3 五档零样本基线 |
-| MED-B | 2026-09-29 | SFT 三臂（先在 1.7B 上快筛，再在 14B 上做主实验） |
-| MED-C | 2026-09-29 | 合成数据增强三臂，在 SFT 冠军上续训 |
-| MED-D | 2026-09-30 | DPO 剂量阶梯（1 / 3 / 9 步） |
-| MED-E | 2026-09-30 | seen 与 unseen 的差距量化、长尾分层，地图定稿 |
+实验分六波推进。每一波开跑之前，先把判据和“两种结果各说明什么”写进 [PLAN.md](PLAN.md)；跑完按原文判决。偏离预期时只改后续实验的设计，不改已写下的判决。本仓库的 git 历史只是发布快照，这些先后关系依据文档内的日期，无法从 git 历史核验。
 
-**规模与边界**（读结论前请先看这里）：单数据集，单随机种子，单模型族（Qwen3）；推理与评测都是 4bit 量化口径；评测集只有 80 / 60 / 40 / 20 / 10 条，val-reg 上 1 分约等于 1 道题。
+| 波 | 完成日期 | 做了什么 | 报告 |
+|---|---|---|---|
+| MED-0 | 2026-09-27 | 数据切分，三种训练目标形态 | [med-0-data.md](reports/med-0-data.md) |
+| MED-A | 2026-09-28 | Qwen3 五档零样本基线 | [med-a-baseline.md](reports/med-a-baseline.md) |
+| MED-B | 2026-09-29 | SFT 三臂（先在 1.7B 上快筛，再在 14B 上做主实验） | [med-b-sft.md](reports/med-b-sft.md) |
+| MED-C | 2026-09-29 | 合成数据增强三臂，在 SFT 冠军上续训 | [med-c-robust.md](reports/med-c-robust.md) |
+| MED-D | 2026-09-30 | DPO 剂量阶梯（1 / 3 / 9 步） | [med-d-dpo.md](reports/med-d-dpo.md) |
+| MED-E | 2026-09-30 | seen 与 unseen 的差距量化、长尾分层，地图定稿 | [med-e-ood.md](reports/med-e-ood.md) |
+
+**规模与边界**（读结论前请先看这里）：单数据集，单随机种子，单模型族（Qwen3）；训练用的是 4bit 量化底座上的 LoRA（QLoRA），不是全参数微调；推理与评测都是 4bit 量化口径；评测集只有 80 / 60 / 40 / 20 / 10 条（依次是 val-reg、test-ood、test-rob、neg、negn），val-reg 上 1 分约等于 1 道题。
 
 ## 结论速览
+
+val-reg 考的是训练集里出现过的疾病（seen），test-ood 考的是训练集里从未出现过的疾病（unseen）。F1 是疾病集合层面的宏平均。下表的读数都可以用「快速开始」末尾的命令从 `evidence/` 重新算出。
 
 | 配方 | val-reg 疾病 F1（seen） | test-ood 疾病 F1（unseen） | 备注 |
 |---|---|---|---|
 | Qwen3-14B 零样本 | 0.412 | 0.072 | 基线 |
-| SFT，官方目标形态（f1） | 0.800 | 0.133 | 对照基线 |
-| SFT，凝练依据（f3c） | 0.840 | 0.083 | 主判据高 4 分，但依据覆盖从 0.976 掉到 0.905 |
-| 续训，加 12 条无病合成数据（cn-low） | 0.863 | 0.067 | 无病轴满分，unseen 减半 |
+| SFT，数据集自带的训练目标（f1） | 0.800 | 0.133 | 对照基线 |
+| SFT，依据改用更简洁的诊断理由（f3c） | 0.840 | 0.083 | 主判据高 4 分，但依据覆盖从 0.976 掉到 0.905 |
+| 在 SFT 冠军上续训，加入 12 条合成无病样本（cn-low） | 0.863 | 0.067 | 无病轴满分，unseen 减半 |
 | SFT + DPO 3 步（dpo-s3） | 0.812 | 0.133 | 各轴均无回退 |
 
 几条值得带走的观察（详见 [notes/map.md](notes/map.md)）：
 
 - **seen 与 unseen 的差距是结构性的。** SFT 把 seen F1 从 0.41 提到 0.80，unseen 只从 0.07 到 0.13。在冠军上叠加续训 epoch，会把差距放大到 12.9 倍。
-- **泛化体现在组织证据，不体现在叫出病名。** unseen 侧的依据覆盖在 11 个配方里有 10 个高于零样本，病名命中几乎为零。
+- **泛化体现在组织证据，不体现在叫出病名。** unseen 侧的依据覆盖在 11 个配方里有 10 个高于零样本；而 test-ood 的 61 处疾病引用里，SFT 之后能叫对病名的只有 8 处（13%）。
 - **同一个信号，用在不同杠杆上结果不同。** 按 score 过滤训练目标，对 SFT 是零增量；同样的 score 信号做成偏好对，经 DPO 带来 +1.2 分。
 - **不对症的增强数据是负资产。** 给已经满分的鲁棒轴补数据没有收益，反而让“无病”这一轴回退。
 - **DPO 的剂量是开关型的。** 1 步无效，3 步饱和，9 步不再变化。
@@ -77,6 +87,12 @@ dataset and model weights are not redistributed. All documentation is in Chinese
 
 ## 快速开始
 
+需要准备什么：
+
+- 只跑数据重建和评测器自校准：一个较新的 Python 3，不需要任何第三方包。
+- 跑完整的数据流水线：Python 3.12，以及约 32GB 磁盘放模型（Qwen3-14B 约 28GB，Qwen3-1.7B 约 4GB）。
+- 训练：16GB 显存的 GPU。
+
 ### 只用标准库：下载数据、重建夹具、跑评测器自校准
 
 ```bash
@@ -97,6 +113,10 @@ pip install -r requirements.txt          # 或 pip install -r requirements-lock.
 
 export MODELS_DIR=/path/to/models        # 其下是 Qwen3-14B/、Qwen3-1.7B/ 等模型目录
                                          # swift 取 PATH 上的可执行文件；否则另设 SWIFT_BIN=/path/to/venv/bin/swift
+
+# 模型可以用随 ms-swift 一并安装的 modelscope 命令行下载：
+#   modelscope download --local-dir "$MODELS_DIR/Qwen3-14B" Qwen/Qwen3-14B
+#   modelscope download --local-dir "$MODELS_DIR/Qwen3-1.7B" Qwen/Qwen3-1.7B
 
 python tools/profile_dpo_lengths.py      # 偏好对长度实测 → data/medd/length-profile.json（CPU，约 2 分钟）
 python tools/build_dpo_pairs.py          # → data/medd/dpo-pairs.jsonl（300 对）
@@ -119,7 +139,7 @@ python tools/check_template_med.py ref && python tools/check_template_med.py swi
 
 ```bash
 python3 tools/run_eval_med.py prep val-reg test-ood test-rob neg negn     # 渲染推理输入（与模型无关）
-bash tools/run_med_b.sh 14b f1            # SFT 的一臂；与常驻服务共享的 16 GB 卡上实测约 1 小时 40 分
+bash tools/run_med_b.sh 14b f1            # SFT 的一臂；在与其它服务共享的 16 GB 卡上实测约 1 小时 40 分
 python3 tools/run_eval_med.py infer sft-14b-f1 val-reg --adapters output/med-b/14b-f1/checkpoint-219 --out output/med-b
 python3 tools/run_eval_med.py score  sft-14b-f1 val-reg --out output/med-b
 python3 tools/run_eval_med.py table --out output/med-b
@@ -140,7 +160,7 @@ EVIDENCE_ROOT=evidence python3 tools/med_e_stratify.py        # 重算长尾分�
 ## 阅读指南
 
 1. [notes/map.md](notes/map.md)：杠杆 × 失败轴地图，项目的主交付。每个配方给出读数、代价、适用情形，以及改善归属于哪一层。
-2. `reports/`：六波实验报告，按 med-0 到 med-e 的顺序读。每份报告给出该波的读数明细，以及按预注册原文写下的判决。
+2. `reports/`：六波实验报告，按 med-0 到 med-e 的顺序读（「这是什么」一节的表格里有链接）。每份报告给出该波的读数明细，以及按预注册原文写下的判决。
 3. [notes/playbook.md](notes/playbook.md) 与 [notes/lessons.md](notes/lessons.md)：可操作的方法论，以及踩过的坑。
 
 过程账本按原样保留，供追溯：[PLAN.md](PLAN.md)（目标、决策、风险、预注册判决）、[SPEC-INDEX.md](SPEC-INDEX.md)（每类规格的事实源在哪）、[HANDOFF.md](HANDOFF.md)（会话交接与阶段卡）。它们是为作者本人和 AI 助手的连续工作会话写的，密度高。读之前先看 [GLOSSARY.md](GLOSSARY.md) 的编号对照；实验的时间线见 [HANDOFF.md](HANDOFF.md) 的 §3（按波次）和 §4（逐日经过）。
@@ -149,9 +169,14 @@ EVIDENCE_ROOT=evidence python3 tools/med_e_stratify.py        # 重算长尾分�
 
 - **代码与文档**：Apache-2.0，见 [LICENSE](LICENSE)；第三方说明见 [NOTICE](NOTICE)。
 - **上游数据集不分发。** 实验基于 ModelScope 上的 `zhangmingme/medical-record-diagnosis-chinese`（1337 例中文病历）。上传者声明为 Apache-2.0，但没有说明病例的来源，这一点无法独立核实。因此本仓库不收录数据集本体，也不收录由它派生的训练与评测夹具，只提供下载脚本、指纹和重建工具。出处与指纹见 [data/PROVENANCE.md](data/PROVENANCE.md)。
-- **随仓的唯一数据**是 `data/medc/eval-neg.jsonl` 与 `data/medc/eval-negn.jsonl`：30 条合成的“无病”体检文本，用来评测模型会不会给健康人安上诊断。它们由大模型起草，数值参考区间取自中国卫生行业标准 WS/T 404-2012 与 WS/T 405-2012，**未经医生审核**。记录元数据里的 `reverse_probe` 字段停在起草时的“待跑”状态；探针实际已跑，结果见 `reports/med-b-sft.md`。过程文档里把 `eval-neg.jsonl` 的 20 条称作“人工形态”，意思是自由起草，不是人手撰写。
+- **随仓的唯一数据**是 `data/medc/eval-neg.jsonl` 与 `data/medc/eval-negn.jsonl`：30 条合成的“无病”体检文本，用来评测模型会不会给健康人安上诊断。
+  - 它们由大模型起草，**未经医生审核**；数值参考区间取自中国卫生行业标准 WS/T 404-2012 与 WS/T 405-2012。
+  - 记录元数据里的 `reverse_probe` 字段停在起草时的“待跑”状态；探针实际已跑，结果见 `reports/med-b-sft.md`。
+  - 过程文档里把 `eval-neg.jsonl` 的 20 条称作“人工形态”，意思是自由起草，不是人手撰写。
 - **模型权重与 LoRA 适配器不发布。**
-- **AI 辅助说明。** 本项目的脚本、数据构建、合成评测集与文档，由作者在 AI 编程助手的协助下完成。X4 工作表里的“人核”判定是模型初判，不是人工复核（表内已标注）。`eval-negn.jsonl` 元数据里的“人核”同样如此：是 AI 助手代作者逐条核查，不是人工或医生审核。
+- **AI 辅助说明。** 本项目的脚本、数据构建、合成评测集与文档，由作者在 AI 编程助手的协助下完成。
+  - X4 工作表里的“人核”判定是模型初判，不是人工复核（表内已标注）。
+  - `eval-negn.jsonl` 元数据里的“人核”同样如此：是 AI 助手代作者逐条核查，不是人工或医生审核。
 
 ## 公开版说明
 
